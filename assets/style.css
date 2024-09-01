@@ -3,6 +3,7 @@ body {
     text-align: center;
     background: url("./images/clown-bg.jpg");
     background-size: cover;
+    color: red;
 }
 
 #game-board {
@@ -11,7 +12,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    background: url(./images/brick-tile.png);
+    background: url(./images/board-bg.png);
     background-size: cover;
     border: 3px solid black;
     border-radius:25px;
