@@ -1,3 +1,5 @@
+let currClownTile;
+
 window.onload = function() {
     setGame();
 }
@@ -9,6 +11,8 @@ function setGame() {
         tile.addEventListener("click", selectTile);
         document.getElementById("board").appendChild(tile);
     }
+
+    setInterval(setClown, 2000);
 }
 
 function selectTile() {
@@ -23,4 +27,18 @@ function selectTile() {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString(); //update score html
         gameOver = true;
     }
+}
+
+function getRandomTile() {
+    let num = Math.floor(Math.random() * 9)
+    return num.toString();
+}
+
+function setClown() {
+    let clown = document.createElement("img");
+    clown.src = "./clown.png";
+
+    let num = getRandomTile();
+    currClownTile = document.getElementById(num);
+    currClownTile.appendChild(clown);
 }

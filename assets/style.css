@@ -21,6 +21,11 @@ body {
 #board div {
     width: 180px;
     height: 180px;
-    background-image: url("./images/drain.png");
+    background-image: url("./images/drainpipe.png");
     background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
 }
