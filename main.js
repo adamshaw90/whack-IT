@@ -31,7 +31,7 @@ function setClown() {
     }
 
     let clown = document.createElement("img");
-    clown.src = "./images/clown.png";
+    clown.src = "assets/images/clown.png";
 
     
     let num = getRandomTile();
@@ -46,7 +46,7 @@ function setBoy() {
     }
 
     let boy = document.createElement("img");
-    boy.src = "./images/boy.png";
+    boy.src = "assets/images/boy.png";
 
     let num = getRandomTile();
     currBoyTile = document.getElementById(num);
